@@ -1,0 +1,182 @@
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border: 4px solid darkslategrey;
+}
+h1 {
+  color: darkslategrey;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.card {
+  width: 375px;
+  margin: 0 auto;
+  border: none;
+  background: none;
+}
+
+.form-control,
+.btn,
+#local {
+  border: 2px solid rgba(31, 156, 214, 0.438);
+  background: rgba(31, 156, 214, 0.24);
+}
+.form-control {
+  display: inline;
+  width: 300px;
+  margin: 10px 0px 5px 15px;
+  padding: 2px 12px;
+  color: darkslategrey;
+}
+
+.btn {
+  display: inline;
+  margin: 0 1px 5px 0px;
+  padding: 5px 10px;
+}
+
+#local {
+  font-size: 14px;
+  display: block;
+  margin: 15px 15px 0px;
+  width: 160px;
+  color: darkslategrey;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+h2,
+.time {
+  color: rgb(108, 199, 48);
+  padding: 0px;
+}
+
+h2 {
+  margin: 10px auto 0px;
+  width: 350px;
+  font-size: 40px;
+}
+
+#time-extras {
+  display: inline;
+  font-size: 15px;
+  color: rgb(108, 199, 48);
+}
+
+#small-grid-row {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.col-6-time {
+  margin: 0 40px 0 0px;;
+  padding: 0 25px 0 0;
+}
+
+.humWind {
+  margin: 0 0px 0 40px;
+  padding: 0 15px 0 20px;
+}
+
+.humidity, .wind {
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: right;
+}
+
+#week-grid {
+  margin: 0 auto;
+  display: block;
+  width: 320px;
+}
+
+#main-temp {
+  font-size: 40px;
+  padding: 5px 0 0;
+}
+
+h3 {
+  padding: 0 10px 20px 0; 
+  font-family: "Montserrat", sans-serif;
+  color: orange;
+}
+
+#unit {
+  font-size: 15px;
+  top: 0;
+  vertical-align: 80%;
+}
+
+.unitConverter {
+  font-size: small;
+  display: inline;
+  padding: 0;
+}
+
+#celsius,
+#farenheight {
+  display: inline;
+  margin: 1px;
+  text-decoration: underline;
+  padding: 0;
+}
+
+#celsius:hover,
+#farenheight:hover {
+  cursor: pointer;
+}
+
+h4 {
+  color: rgb(108, 199, 48);
+  padding: 12px 0 24px 0px;
+}
+
+.col-2-4-day {
+  margin: 0 0px 5px 0;
+  color: darkslategrey;
+}
+
+.col-2-4-low {
+  margin: 4px 5px 5px 20px;
+}
+.col-2-4-line,
+.col-2-4-line h4 {
+  color: rgb(31, 156, 214);
+}
+.col-2-4-high {
+  margin: 4px 20px 5px 5px;
+}
+.col-2-4-icon {
+  margin: 4px 0 5px 30px;
+}
+.col-2-4-low,
+.col-2-4-high {
+  color: rgb(108, 199, 48);
+}
+.row-sat,
+.row-sun,
+.row-mon,
+.row-tue,
+.row-wed {
+  font-size: 20px;
+  padding: 8px 2px;
+}
+
+.fa-sun {
+  color: rgb(228, 228, 21);
+}
+
+.fa-cloud-sun {
+  color: darkgrey;
+}
+
+.fa-cloud-showers-heavy {
+  color: rgb(31, 156, 214);
+}
+
+.fa-bolt {
+  color: black;
+}
