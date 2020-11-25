@@ -34,6 +34,21 @@ function showWeatherInfo(response) {
   document.querySelector("#wind-fig").innerHTML = Math.round(response.data.wind.speed);
 
   document.querySelector(".description").innerHTML = response.data.weather[0].main;
+    if (response.data.weather[0].main === "Rain") {
+      document.querySelector(".img").style.backgroundImage= "url(img/rain.jpg)";
+    } else {
+      if (response.data.weather[0].main === "Clouds" | response.data.weather[0].main === "Mist") {
+        document.querySelector(".img").style.backgroundImage = "url(img/overcast.jpg)";
+      } else {
+        if (response.data.weather[0].main === "Clear") {
+          document.querySelector(".img").style.backgroundImage = "url(img/sunny.jpg)";
+        } else {
+          if (response.data.weather[0].main === "Thunderstorm") {
+            document.querySelector(".img").style.backgroundImage = "url(img/storm.jpg)";
+          }
+        }
+      }
+    }
   document.querySelector("#min").innerHTML = Math.round(response.data.main.temp_min);
   document.querySelector("#max").innerHTML = Math.round(response.data.main.temp_max);
 }

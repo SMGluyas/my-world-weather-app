@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <div class="img" style="background-image: url(img/rain.jpg);">
       <div class="container">
         <h1>
           Weather Forecast
@@ -43,41 +44,66 @@
             </div>
           </form>
         </div>
-        <h2 class="cityName" id="city-name">
-            
-        </h2>
-        <div class="grid" id="time-extras">
-          <div class="row" id="small-grid-row">
-            <div class = "col-6-time">
-              <div class="time"></div>
-              <div class = "description"></div>
-            </div>
-            <div class="col-6-humWind"></div>
-              <ul class = "humWind">
-                <li class = "humidity">humidity: <span id = "humidity-fig"></span>%</li>
-                <li class = "wind">wind: <span id = "wind-fig"></span>km/h</li>
-              </ul>
+        <div class="weatherGrid" id="todays-complete-weather">
+          <h2 class="cityName" id="city-name"></h2>
+          <div class="grid" id="time-extras">
+            <div class="row" id="small-grid-row">
+              <div class = "col-6-time">
+                <div class="time"></div>
+                <div class = "description"></div>
+              </div>
+              <div class="col-6-humWind">
+                <ul class = "humWind">
+                  <li class = "humidity">humidity: <span id = "humidity-fig"></span>%</li>
+                  <li class = "wind">wind: <span id = "wind-fig"></span>km/h</li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="grid" id="todays-temperatures"> 
+            <div class="row">
+              <div class="col-2-4-day">
+                <h3 class="today" id="current-temperature">
+                  <span id="main-temp" type="text"> </span>
+                  <span id="unit">
+                      °C
+                  </span>
+                  <ul class="unitConverter">
+                    <li id = "celsius">
+                      °C
+                    </li>
+                    <li id="farenheight">
+                      °F
+                    </li>
+                  </ul>
+                </h3>
+              </div>
+              <div class="col-2-4-low">
+                <h4>
+                  <span id = "min">6</span>°C
+                </h4>
+              </div>
+              <div class="col-2-4-line">
+                <h4>
+                  |
+                </h4>
+              </div>
+              <div class="col-2-4-high">
+                <h4> 
+                  <span id = "max">20</span>°C
+                </h4>
+              </div>
+              <div class="col-2-4-icon">
+                <h4>
+                  <i class="fas fa-sun"></i>
+                </h4>
+              </div>
+            </div>
+          </div>    
         </div>
         <div class="grid" id="week-grid">
           <div class="row">
             <div class="col-2-4-day">
-              <h3 class="today" id="todays-weather">
-                <span id="main-temp" type="text" >
-                
-                </span>
-                <span id="unit">
-                    °C
-                </span>
-                <ul class="unitConverter">
-                  <li id = "celsius">
-                    °C
-                  </li>
-                  <li id="farenheight">
-                    °F
-                  </li>
-              </h3>
               <div class="row-sat">
                 Sat
               </div>
@@ -95,10 +121,7 @@
               </div>
             </div>
             
-            <div class="col-2-4-low">
-              <h4 id = "min">
-                6
-              </h4>
+            <div class="col-2-4-low">             
               <div class="row-sat">
                 8°C
               </div>
@@ -117,9 +140,6 @@
             </div>
             
             <div class="col-2-4-line">
-              <h4>
-               |
-              </h4>
               <div class="row-sat">
                 |
               </div>
@@ -138,9 +158,6 @@
             </div>
             
             <div class="col-2-4-high">
-              <h4 id = "max">
-                20
-              </h4>
               <div class="row-sat">
                 21°C
               </div>
@@ -159,9 +176,6 @@
             </div>
             
             <div class="col-2-4-icon">
-              <h4>
-                <i class="fas fa-sun"></i>
-              </h4>
               <div class="row-sat">
                 <i class="fas fa-cloud-sun"></i>
               </div>
@@ -184,7 +198,7 @@
       <footer>
         <a href="https://github.com/SMGluyas/my-world-weather-app" target="_blank">Open-source code</a>, by Sarah Gluyas
       </footer>
-  
+    </div>
 
     <script src="src/index.js"></script>
   </body>

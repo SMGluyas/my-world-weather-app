@@ -1,5 +1,10 @@
-body {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+.img {
+  width: 550px;
+  height: 625px;
+  background-size: 100%;
+  margin: 0 auto;
+  border: 0.5px solid darkslategrey;
+  border-radius: 4px;
 }
 
 h1 {
@@ -21,8 +26,8 @@ h1 {
 .form-control,
 .btn,
 #local {
-  border: 2px solid rgba(31, 156, 214, 0.438);
-  background: rgba(31, 156, 214, 0.24);
+  border: 2px solid rgb(51, 65, 92);
+  background: rgba(51, 65, 92, 0.644);
 }
 .form-control {
   display: inline;
@@ -48,10 +53,23 @@ h1 {
   padding: 4px 10px;
 }
 
+#todays-complete-weather {
+  margin: 0 auto;
+  width: 350px;
+  border: 0.5px solid rgba(214, 211, 211, 0.671);
+  border-radius: 4px;
+  background-color:rgba(214, 211, 211, 0.671);
+  padding: 2px;
+}
+
+#todays-temperatures {
+  line-height: 1px;
+}
+
 #city-name,
 .time {
-  color: rgb(108, 199, 48);
-  padding: 0px;
+  color: rgb(51, 65, 92);
+  padding: 0;
 }
 
 #city-name {
@@ -63,7 +81,7 @@ h1 {
 #time-extras {
   display: inline;
   font-size: 15px;
-  color: rgb(108, 199, 48);
+  color: rgb(51, 65, 92);
 }
 
 #small-grid-row {
@@ -72,13 +90,13 @@ h1 {
 }
 
 .col-6-time {
-  margin: 0 40px 0 0px;;
-  padding: 0 25px 0 0;
+  margin: 0 5px 0 0;
+  padding: 0 35px 0 0;
 }
 
-.humWind {
-  margin: 0 0px 0 40px;
-  padding: 0 15px 0 20px;
+.col-6-humWind {
+  margin: 0 0 0 5px;
+  padding: 0 0 0 35px;
 }
 
 .humidity, .wind {
@@ -87,7 +105,7 @@ h1 {
   text-align: right;
 }
 
-#week-grid {
+.grid {
   margin: 0 auto;
   display: block;
   width: 320px;
@@ -98,10 +116,10 @@ h1 {
   padding: 5px 0 0;
 }
 
-#todays-weather {
+#current-temperature {
   padding: 0 10px 20px 0; 
   font-family: "Montserrat", sans-serif;
-  color: orange;
+  color: rgb(71, 115, 156);
 }
 
 #unit {
@@ -130,13 +148,13 @@ h1 {
 }
 
 h4 {
-  color: rgb(108, 199, 48);
+  color: rgb(51, 65, 92);
   padding: 12px 0 24px 0px;
 }
 
 .col-2-4-day {
   margin: 0 0px 5px 0;
-  color: darkslategrey;
+  color: rgb(51, 65, 92);
 }
 
 .col-2-4-low {
@@ -154,7 +172,7 @@ h4 {
 }
 .col-2-4-low,
 .col-2-4-high {
-  color: rgb(108, 199, 48);
+  color: rgb(51, 65, 92);
 }
 .row-sat,
 .row-sun,
